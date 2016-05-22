@@ -1,6 +1,6 @@
 Setup Ubuntu Desktop (16.04)
-Instructions for web-developer.
 ============
+Instructions for web-developer.
 
 ####Update
 ```
@@ -61,9 +61,9 @@ sudo apt-get install -y php7.0
 ```
 #####Apache 2.4
 ```
-$ sudo add-apt-repository ppa:ondrej/apache2
-$ sudo apt-get update
-$ sudo apt-get install apache2
+sudo add-apt-repository ppa:ondrej/apache2
+sudo apt-get update
+sudo apt-get install apache2
 ```
 #####MySQL 5.7
 ```
