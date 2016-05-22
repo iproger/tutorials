@@ -7,6 +7,7 @@ sudo apt-get upgrade
 
 sudo apt-get install nodejs
 sudo apt-get install npm
+sudo ln -s /usr/bin/nodejs /usr/bin/node
 
 apt-get install mc openssh-server curl nodejs nginx git git-gui
 
