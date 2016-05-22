@@ -1,7 +1,8 @@
 Setup Ubuntu Desktop (16.04)
+Instructions for web-developer.
 ============
 
-#### Update
+####Update
 ```
 sudo apt-get update
 sudo apt-get upgrade
@@ -18,8 +19,12 @@ cd /media/`whoami`/VBOXADDITIONS*
 sudo ./VBoxLinuxAdditions.run
 sudo bash -c 'echo vboxvideo >> /etc/modules'
 ```
+Check:
+```
+/usr/lib/nux/unity_support_test -p
+```
 
-#### Install Windows 7 font
+####Install Windows 7 font
 Source: http://startubuntu.ru/?p=104240
 ```
 cd /tmp && wget http://www.stchman.com/tools/MS_fonts/tahoma.zip
@@ -32,14 +37,19 @@ sudo bash /etc/fonts/infinality/infctl.sh setstyle
 ```
 Enter "6".
 
-#### Install Node + npm
+####Install Node + npm
 ```
 sudo apt-get install nodejs
 sudo apt-get install npm
 sudo ln -s /usr/bin/nodejs /usr/bin/node
 ```
 
-#### Install LAMP
+####Install Bower
+```
+sudo npm install -g bower
+```
+
+####Install LAMP
 Source: http://tecadmin.net/install-php-7-0-apache-2-4-mysql-5-6-on-ubuntu/
 
 #####PHP 7
