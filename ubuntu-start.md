@@ -76,6 +76,29 @@ sudo apt-get install mysql-server-5.7
 sudo apt-get install libapache2-mod-php7.0 php7.0-mysql php7.0-curl php7.0-json
 ```
 
+####Install Git
+```
+sudo apt-get install git
+```
+
+####Install Curl
+```
+sudo apt-get install curl
+```
+
+####Install Composer
+Source: http://askubuntu.com/questions/116960/global-installation-of-composer-manual
+```
+curl -s http://getcomposer.org/installer | php
+sudo mv composer.phar /usr/local/bin/
+alias composer='/usr/local/bin/composer.phar'
+```
+
+
+
+
+
+
 
 ```
 
