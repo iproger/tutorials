@@ -48,7 +48,7 @@ gsettings set com.canonical.Unity.Launcher launcher-position Bottom
 gsettings set com.canonical.Unity.Launcher launcher-position Left
 ```
 
-###Resize the Unity launcher
+###Resize the Unity launcher [optionally]
 Source: http://askubuntu.com/questions/18345/how-to-resize-the-unity-launcher
 
 ###Install Node + npm
