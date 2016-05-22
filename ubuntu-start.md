@@ -7,7 +7,7 @@ sudo apt-get update
 sudo apt-get upgrade
 ```
 
-####Fix 3d-acceleration
+####Fix 3D-acceleration
 Source: http://linux.vsevteme.ru/2013/02/01/blog/3d-uskorenie-v-ubuntu-12-10-zapuschennom-v-virtualbox
 ```
 sudo apt-get install linux-headers-$(uname -r) build-essential compizconfig-settings-manager
@@ -37,6 +37,33 @@ Enter "6".
 sudo apt-get install nodejs
 sudo apt-get install npm
 sudo ln -s /usr/bin/nodejs /usr/bin/node
+```
+
+#### Install LAMP
+Source: http://tecadmin.net/install-php-7-0-apache-2-4-mysql-5-6-on-ubuntu/
+
+#####PHP 7
+```
+sudo apt-get install python-software-properties
+sudo add-apt-repository ppa:ondrej/php
+sudo apt-get update
+sudo apt-get install -y php7.0
+```
+#####Apache 2.4
+```
+$ sudo add-apt-repository ppa:ondrej/apache2
+$ sudo apt-get update
+$ sudo apt-get install apache2
+```
+#####MySQL 5.7
+```
+sudo add-apt-repository -y ppa:ondrej/mysql-5.7
+sudo apt-get update
+sudo apt-get install mysql-server-5.7
+```
+#####PHP-extensions
+```
+sudo apt-get install libapache2-mod-php7.0 php7.0-mysql php7.0-curl php7.0-json
 ```
 
 
