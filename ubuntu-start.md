@@ -1,15 +1,14 @@
-Help for deployments surroundings in Ubuntu.
+Setup Ubuntu Desktop (16.04)
 ============
 
 #### Update
-
 ```
 sudo apt-get update
 sudo apt-get upgrade
 ```
 
 ####Fix 3d-acceleration
-http://linux.vsevteme.ru/2013/02/01/blog/3d-uskorenie-v-ubuntu-12-10-zapuschennom-v-virtualbox
+Source: http://linux.vsevteme.ru/2013/02/01/blog/3d-uskorenie-v-ubuntu-12-10-zapuschennom-v-virtualbox
 ```
 sudo apt-get install linux-headers-$(uname -r) build-essential compizconfig-settings-manager
 ```
@@ -19,6 +18,19 @@ cd /media/`whoami`/VBOXADDITIONS*
 sudo ./VBoxLinuxAdditions.run
 sudo bash -c 'echo vboxvideo >> /etc/modules'
 ```
+
+#### Install Windows 7 font
+Source: http://startubuntu.ru/?p=104240
+```
+cd /tmp && wget http://www.stchman.com/tools/MS_fonts/tahoma.zip
+sudo unzip -d /usr/share/fonts/truetype/msttcorefonts /tmp/tahoma.zip
+sudo add-apt-repository ppa:no1wantdthisname/ppa
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install fontconfig-infinality
+sudo bash /etc/fonts/infinality/infctl.sh setstyle
+```
+Enter "6".
 
 #### Install Node + npm
 ```
