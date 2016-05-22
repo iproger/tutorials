@@ -123,6 +123,7 @@ php -r "unlink('composer-setup.php');"
 
 
 ###TODO:
+Source: http://www.linuxrussia.com/2014/04/ubuntu-1404.html#glava3
 ```
 
 apt-get install mc openssh-server curl nodejs nginx git git-gui
