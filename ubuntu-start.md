@@ -5,6 +5,9 @@ sudo apt-get update
 
 sudo apt-get upgrade
 
+sudo apt-get install nodejs
+sudo apt-get install npm
+
 apt-get install mc openssh-server curl nodejs nginx git git-gui
 
 apt-get install apache2 a2enmod rewrite
