@@ -1,13 +1,34 @@
 Help for deployments surroundings in Ubuntu.
 ============
+
+#### Update
+
 ```
 sudo apt-get update
-
 sudo apt-get upgrade
+```
 
+####Fix 3d-acceleration
+http://linux.vsevteme.ru/2013/02/01/blog/3d-uskorenie-v-ubuntu-12-10-zapuschennom-v-virtualbox
+```
+sudo apt-get install linux-headers-$(uname -r) build-essential compizconfig-settings-manager
+```
+Run VirtualBox guest additions
+```
+cd /media/`whoami`/VBOXADDITIONS*
+sudo ./VBoxLinuxAdditions.run
+sudo bash -c 'echo vboxvideo >> /etc/modules'
+```
+
+#### Install Node + npm
+```
 sudo apt-get install nodejs
 sudo apt-get install npm
 sudo ln -s /usr/bin/nodejs /usr/bin/node
+```
+
+
+```
 
 apt-get install mc openssh-server curl nodejs nginx git git-gui
 
