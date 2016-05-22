@@ -2,13 +2,13 @@ Setup Ubuntu Desktop (16.04)
 ============
 Instructions for web-developer.
 
-####Update
+###Update
 ```
 sudo apt-get update
 sudo apt-get upgrade
 ```
 
-####Fix 3D-acceleration
+###Fix 3D-acceleration
 Source: http://linux.vsevteme.ru/2013/02/01/blog/3d-uskorenie-v-ubuntu-12-10-zapuschennom-v-virtualbox
 ```
 sudo apt-get install linux-headers-$(uname -r) build-essential compizconfig-settings-manager
@@ -24,7 +24,7 @@ Check:
 /usr/lib/nux/unity_support_test -p
 ```
 
-####Install Windows 7 font
+###Install Windows 7 font
 Source: http://startubuntu.ru/?p=104240
 ```
 cd /tmp && wget http://www.stchman.com/tools/MS_fonts/tahoma.zip
@@ -37,19 +37,19 @@ sudo bash /etc/fonts/infinality/infctl.sh setstyle
 ```
 Enter "6".
 
-####Install Node + npm
+###Install Node + npm
 ```
 sudo apt-get install nodejs
 sudo apt-get install npm
 sudo ln -s /usr/bin/nodejs /usr/bin/node
 ```
 
-####Install Bower
+###Install Bower
 ```
 sudo npm install -g bower
 ```
 
-####Install LAMP
+###Install LAMP
 Source: http://tecadmin.net/install-php-7-0-apache-2-4-mysql-5-6-on-ubuntu/
 
 #####PHP 7
@@ -76,17 +76,17 @@ sudo apt-get install mysql-server-5.7
 sudo apt-get install libapache2-mod-php7.0 php7.0-mysql php7.0-curl php7.0-json
 ```
 
-####Install Git
+###Install Git
 ```
 sudo apt-get install git
 ```
 
-####Install Curl
+###Install Curl
 ```
 sudo apt-get install curl
 ```
 
-####Install Composer
+###Install Composer
 Source: http://askubuntu.com/questions/116960/global-installation-of-composer-manual
 ```
 curl -s http://getcomposer.org/installer | php
