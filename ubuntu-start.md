@@ -2,6 +2,32 @@ Setup Ubuntu Desktop (16.04)
 ============
 Instructions for web-developer.
 
+### Instruction for GTX970.
+1. Switch to onboard graphics and install ubuntu.
+
+2. Add PPA repository for videocard.
+```
+sudo add-apt-repository ppa:xorg-edgers/ppa
+sudo apt-get update
+```
+https://launchpad.net/~xorg-edgers/+archive/ubuntu/ppa
+
+3. Open `Programs and Updates` application/Additional Drivers
+Switch to NVIDIA.
+
+### How to configute buttons on Logitech Mouse MX
+```
+sudo apt-get install xbindkeys xautomation x11-utils
+```
+http://askubuntu.com/questions/152297/how-to-configure-extra-buttons-in-logitech-mouse
+
+How to set `ZOOM BUTTON MIDDLE CLICK`
+```
+"xte 'mouseclick 2'"
+  b:13+Release
+ ```
+http://onoffswitch.net/logitech-mx-mouse-zoom-button-middle-click-ubuntu/
+
 ### Update
 ```
 sudo apt-get update
