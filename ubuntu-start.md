@@ -2,13 +2,13 @@ Setup Ubuntu Desktop (16.04)
 ============
 Instructions for web-developer.
 
-###Update
+### Update
 ```
 sudo apt-get update
 sudo apt-get upgrade
 ```
 
-###Fix 3D-acceleration
+### Fix 3D-acceleration
 Source: http://linux.vsevteme.ru/2013/02/01/blog/3d-uskorenie-v-ubuntu-12-10-zapuschennom-v-virtualbox
 ```
 sudo apt-get install linux-headers-$(uname -r) build-essential compizconfig-settings-manager
@@ -24,7 +24,7 @@ Check:
 /usr/lib/nux/unity_support_test -p
 ```
 
-###Install Windows 7 font
+### Install Windows 7 font
 Source: http://startubuntu.ru/?p=104240
 ```
 cd /tmp && wget http://www.stchman.com/tools/MS_fonts/tahoma.zip
@@ -37,13 +37,13 @@ sudo bash /etc/fonts/infinality/infctl.sh setstyle
 ```
 Enter "6".
 
-###Change the Unity launcher orientation [optionally]
+### Change the Unity launcher orientation [optionally]
 Source: http://ubuntuhandbook.org/index.php/2016/03/ubuntu-16-04-move-unity-launcher-to-bottom/
 #####To bottom
 ```
 gsettings set com.canonical.Unity.Launcher launcher-position Bottom
 ```
-#####To left
+##### To left
 ```
 gsettings set com.canonical.Unity.Launcher launcher-position Left
 ```
@@ -51,65 +51,65 @@ gsettings set com.canonical.Unity.Launcher launcher-position Left
 ###Resize the Unity launcher [optionally]
 Source: http://askubuntu.com/questions/18345/how-to-resize-the-unity-launcher
 
-###Install Node + npm
+### Install Node + npm
 ```
 sudo apt-get install nodejs
 sudo apt-get install npm
 sudo ln -s /usr/bin/nodejs /usr/bin/node
 ```
 
-###Install Bower
+### Install Bower
 ```
 sudo npm install -g bower
 ```
 
-###Install LAMP
+### Install LAMP
 Source: http://tecadmin.net/install-php-7-0-apache-2-4-mysql-5-6-on-ubuntu/
 
-#####PHP 7
+##### PHP 7
 ```
 sudo apt-get install python-software-properties
 sudo add-apt-repository ppa:ondrej/php
 sudo apt-get update
 sudo apt-get install -y php7.0
 ```
-#####Apache 2.4
+##### Apache 2.4
 ```
 sudo add-apt-repository ppa:ondrej/apache2
 sudo apt-get update
 sudo apt-get install apache2
 ```
-#####MySQL 5.7
+##### MySQL 5.7
 ```
 sudo add-apt-repository -y ppa:ondrej/mysql-5.7
 sudo apt-get update
 sudo apt-get install mysql-server-5.7
 ```
-#####PHP-extensions
+##### PHP-extensions
 ```
 sudo apt-get install libapache2-mod-php7.0 php7.0-mysql php7.0-curl php7.0-json php7.0-mbstring
 ```
 ! libapache2-mod-php
 
-###Install Git
+### Install Git
 ```
 sudo apt-get install git
 ```
 
-###Install Curl
+### Install Curl
 ```
 sudo apt-get install curl
 ```
 
-###Install Composer
-#####Globally
+### Install Composer
+##### Globally
 Source: http://askubuntu.com/questions/116960/global-installation-of-composer-manual
 ```
 curl -s http://getcomposer.org/installer | php
 sudo mv composer.phar /usr/local/bin/
 alias composer='/usr/local/bin/composer.phar'
 ```
-#####Locally
+##### Locally
 Source: https://getcomposer.org/download/
 ```
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
@@ -120,10 +120,10 @@ php -r "unlink('composer-setup.php');"
 
 
 
-###TODO:
+### TODO:
 https://habrahabr.ru/post/302350/
 
-###TODO:
+### TODO:
 Source: http://www.linuxrussia.com/2014/04/ubuntu-1404.html#glava3
 ```
 
