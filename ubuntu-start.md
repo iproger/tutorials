@@ -23,6 +23,9 @@ http://askubuntu.com/questions/152297/how-to-configure-extra-buttons-in-logitech
 
 How to set `ZOOM BUTTON MIDDLE CLICK`
 ```
+gedit $HOME/.xbindkeysrc
+```
+```
 "xte 'mouseclick 2'"
   b:13+Release
  ```
